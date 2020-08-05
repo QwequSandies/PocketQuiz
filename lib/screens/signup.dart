@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quizzy/screens/home.dart';
 import 'package:quizzy/screens/signin.dart';
 import 'package:quizzy/widgets/widgets.dart';
 
@@ -58,14 +59,17 @@ class _SignUpState extends State<SignUp> {
                 },
                 decoration: InputDecoration(hintText: "Password"),
                 onChanged: (val) {
-                  email = val;
+                  password = val;
                 },
               ),
               SizedBox(
                 height: 24,
               ),
               GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushReplacement(
+                      context, MaterialPageRoute(builder: (context) => Home()));
+                },
                 child: Container(
                   padding: EdgeInsets.symmetric(vertical: 18),
                   decoration: BoxDecoration(

@@ -48,7 +48,7 @@ class _SignInState extends State<SignIn> {
                   hintText: "Password",
                 ),
                 onChanged: (val) {
-                  email = val;
+                  password = val;
                 },
               ),
               SizedBox(

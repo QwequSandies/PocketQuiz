@@ -82,6 +82,7 @@ flutter:
     - family: Lobster
       fonts:
         - asset: fonts/Lobster-Regular.ttf
+ 
     
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
