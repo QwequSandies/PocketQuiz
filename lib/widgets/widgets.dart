@@ -22,25 +22,24 @@ Widget appBar(BuildContext context) {
   );
 }
 
+List<String> images = [
+  "images/flutter.jpg",
+  "images/c++.jpg",
+  "images/visual-basic.jpg",
+  "images/java.jpg",
+  "images/javascript.jpg",
+  "images/ubuntu.jpg"
+];
 
-  List<String> images = [
-    "images/flutter.jpg",
-    "images/c++.jpg",
-    "images/visual-basic.jpg",
-    "images/java.jpg",
-    "images/javascript.jpg",
-    "images/ubuntu.jpg"
-  ];
+List<String> subtext = [
+  "Flutter uses Dart programming language\n which was introduced by Google in 2011 \n and is rarely used by developers.",
+  "Java is a general-purpose programming \n language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible.\n",
+  "C++ is an object oriented computer \nlanguage created by notable computer \n scientist Bjorne Stroustrop",
+  "Visual Basic is a third-generation event-driven programming language",
+  "JavaScript is a text-based programming \n language used both on the client-side\n and server-side that allows you to make web pages interactive.",
+  "Ubuntu is a Linux based operating system. Get to know your command lines"
+];
 
-  List<String> subtext = [
-    "Flutter uses Dart programming language\n which was introduced by Google in 2011 \n and is rarely used by developers.",
-    "Java is a general-purpose programming \n language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible.\n",
-    "C++ is an object oriented computer \nlanguage created by notable computer \n scientist Bjorne Stroustrop",
-    "Visual Basic is a third-generation event-driven programming language",
-    "JavaScript is a text-based programming \n language used both on the client-side\n and server-side that allows you to make web pages interactive.",
-    "Ubuntu is a Linux based operating system. Get to know your command lines"
-  ];
-  
 Widget customcard(String langname, String image, String subtext) {
   return Padding(
     padding: EdgeInsets.all(20),
@@ -92,7 +91,7 @@ Widget customcard(String langname, String image, String subtext) {
                     fontSize: 18,
                     color: Colors.white,
                   ),
-                  maxLines: 5,
+                  maxLines: 3,
                   textAlign: TextAlign.justify,
                 ),
               )
@@ -100,6 +99,20 @@ Widget customcard(String langname, String image, String subtext) {
           ),
         ),
       ),
+    ),
+  );
+}
+
+Widget blueButton(BuildContext context, String label) {
+  return Container(
+    padding: EdgeInsets.symmetric(vertical: 18),
+    decoration: BoxDecoration(
+        color: Colors.blue, borderRadius: BorderRadius.circular(30)),
+    alignment: Alignment.center,
+    width: MediaQuery.of(context).size.width - 48,
+    child: Text(
+      label,
+      style: TextStyle(color: Colors.white, fontSize: 16),
     ),
   );
 }

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+// import 'package:quizzy/screens/option.dart';
+import 'package:quizzy/screens/quiz/createquiz.dart';
 import 'package:quizzy/screens/signup.dart';
 import 'package:quizzy/widgets/widgets.dart';
 
@@ -54,20 +56,12 @@ class _SignInState extends State<SignIn> {
               SizedBox(
                 height: 24,
               ),
-              Container(
-                padding: EdgeInsets.symmetric(vertical: 18),
-                decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(30)),
-                alignment: Alignment.center,
-                width: MediaQuery.of(context).size.width - 48,
-                child: Text(
-                  'Sign in',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
-                  ),
-                ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => CreateQuiz()));
+                },
+                child: blueButton(context, "Sign In")
               ),
               SizedBox(
                 height: 18,
@@ -95,7 +89,7 @@ class _SignInState extends State<SignIn> {
                 ],
               ),
               SizedBox(
-                height: 80,
+                height: 40,
               ),
             ],
           ),
