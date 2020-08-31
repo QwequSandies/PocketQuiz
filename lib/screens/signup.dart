@@ -32,7 +32,11 @@ class _SignUpState extends State<SignUp> {
                 validator: (val) {
                   return val.isEmpty ? "Enter Name" : null;
                 },
-                decoration: InputDecoration(hintText: "Name"),
+                decoration: InputDecoration(
+                    hintText: "Name",
+                    hintStyle: TextStyle(
+                      fontFamily: "Lobster",
+                    )),
                 onChanged: (val) {
                   name = val;
                 },
@@ -44,7 +48,11 @@ class _SignUpState extends State<SignUp> {
                 validator: (val) {
                   return val.isEmpty ? "Enter email ID" : null;
                 },
-                decoration: InputDecoration(hintText: "Email"),
+                decoration: InputDecoration(
+                    hintText: "Email",
+                    hintStyle: TextStyle(
+                      fontFamily: "Lobster",
+                    )),
                 onChanged: (val) {
                   email = val;
                 },
@@ -57,7 +65,11 @@ class _SignUpState extends State<SignUp> {
                 validator: (val) {
                   return val.isEmpty ? "Enter Password" : null;
                 },
-                decoration: InputDecoration(hintText: "Password"),
+                decoration: InputDecoration(
+                    hintText: "Password",
+                    hintStyle: TextStyle(
+                      fontFamily: "Lobster",
+                    )),
                 onChanged: (val) {
                   password = val;
                 },
@@ -66,12 +78,11 @@ class _SignUpState extends State<SignUp> {
                 height: 24,
               ),
               GestureDetector(
-                onTap: () {
-                  Navigator.pushReplacement(
-                      context, MaterialPageRoute(builder: (context) => Home()));
-                },
-                child: blueButton(context, "Sign Up")
-              ),
+                  onTap: () {
+                    Navigator.pushReplacement(context,
+                        MaterialPageRoute(builder: (context) => Home()));
+                  },
+                  child: blueButton(context, "Sign Up")),
               SizedBox(
                 height: 18,
               ),

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:quizzy/widgets/widgets.dart';
 
 class Home extends StatefulWidget {
@@ -8,12 +9,11 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
-
- 
-
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
+        
     return Scaffold(
         appBar: AppBar(
           title: appBar(context),
@@ -23,8 +23,8 @@ class _HomeState extends State<Home> {
         ),
         body: ListView(
           children: <Widget>[
-            customcard("Flutter", images[0],subtext[0]),
-            customcard("Java", images [3], subtext[1]),
+            customcard("Flutter", images[0], subtext[0]),
+            customcard("Java", images[3], subtext[1]),
             customcard("Visual Basic", images[2], subtext[3]),
             customcard(" C++", images[1], subtext[2]),
             customcard(" Javascript", images[4], subtext[4]),

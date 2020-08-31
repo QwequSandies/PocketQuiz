@@ -1,4 +1,8 @@
+
+
+
 import 'package:flutter/material.dart';
+import 'package:quizzy/screens/quiz/quizpage.dart';
 
 Widget appBar(BuildContext context) {
   return Center(
@@ -45,7 +49,9 @@ Widget customcard(String langname, String image, String subtext) {
     padding: EdgeInsets.all(20),
     child: InkWell(
       onTap: () {
-        debugPrint("Card Tapped");
+        Navigator.of(context).pushReplacement(MaterialPageRoute(
+          builder: (context) => Getjson(),
+        ));
       },
       child: Material(
         color: Colors.blue,
@@ -116,3 +122,4 @@ Widget blueButton(BuildContext context, String label) {
     ),
   );
 }
+

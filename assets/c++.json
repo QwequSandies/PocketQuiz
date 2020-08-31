@@ -1,0 +1,88 @@
+[
+    {
+        "1": "What is the use of function call operator? ",
+        "2": "Pick out the correct statement. ",
+        "3": "What will happen when the function call operator is overloaded?",
+        "4": "In which form does the function call operator can be overloaded?",
+        "5": "Which of the following is called address operator?",
+        "6": "What are the actual parameters in C++?",
+        "7": "Which function is used to read a single character from the console in C++?",
+        "8": "Which of the following escape sequence represents tab?",
+        "9": " Which of the following escape sequence represents carriage return?",
+        "10": "Wrapping data and its related functionality into a single entity is known as _____________"
+    },
+    {
+        "1": {
+            "a": "overloading the methods",
+            "b": "overloading the objects",
+            "c": "overloading the parameters",
+            "d": "overloading the string"
+        },
+        "2": {
+            "a": "virtual functions does not give the ability to write a templated function",
+            "b": "virtual functions does not give the ability to rewrite a templated function",
+            "c": "virtual functions does give the ability to write a templated function",
+            "d": "virtual functions does not give the ability to rewrite a simple function"
+        },
+        "3": {
+            "a": "It will not modify the functions",
+            "b": "It will modify the functions",
+            "c": "It will modify the object",
+            "d": "It will modify the operator to be interpreted"
+        },
+        "4": {
+            "a": "static member function",
+            "b" :"non-static member function",
+            "c" :"dynamis_cast",
+            "d" :"static_cast"
+        },
+        "5": {
+            "a": "*",
+            "b": "&",
+            "c": "_",
+            "d": "%"
+        },
+        "6": {
+            "a": "Parameters with which functions are called",
+            "b": "Parameters which are used in the definition of a function",
+            "c": "Variables other than passed parameters in a function",
+            "d": "Variables that are never used in the function"
+        },
+        "7": {
+            "a": "cin.get(ch)",
+            "b": "getline(ch)",
+            "c": "read(ch)",
+            "d": "scanf(ch)"
+        },
+        "8": {
+            "a": "\r",
+            "b": "\t\r",
+            "c": "\b",
+            "d": "\t"
+        },
+        "9": {
+            "a": "\r",
+            "b": "\n",
+            "c": "\n\r",
+            "d": "\b"
+        },
+        "10": {
+            "a": "Abstraction",
+            "b": "Encapsulation",
+            "c": "Polymorphism",
+            "d": "Modularity"
+        }
+    },
+    {
+        "1": "overloading the objects",
+        "2": "virtual functions does not give the ability to write a templated function",
+        "3": "It will modify the operator to be interpreted",
+        "4": "non-static member function",
+        "5": "&",
+        "6": "Parameters with which functions are called",
+        "7": "cin.get(ch)",
+        "8": "\t",
+        "9": "\r",
+        "10": "Encapsulation"
+    }
+]

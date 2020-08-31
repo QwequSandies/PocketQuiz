@@ -1,0 +1,88 @@
+[
+    {
+        "1": "JavaScript Code can be called by using ___________ ",
+        "2": "The type of a variable that is volatile is _______________ ",
+        "3": " A hexadecimal literal begins with __________ ",
+        "4": "The generalised syntax for a real number representation is __________ ",
+        "5": "JavaScript _________ when there is an indefinite or an infinite value during an arithmetic computation. ",
+        "6": "Which of the following is not considered as an error in JavaScript? ",
+        "7": "The escape sequence ‘\f’ stands for _________ ",
+        "8": "The snippet that has to be used to check if “a” is not equal to “null” is _________ ",
+        "9": "The statement a===b refers to _________ ",
+        "10": "A function definition expression can be called as __________"
+    },
+    {
+        "1": {
+            "a": "RMI",
+            "b": "Triggering Event",
+            "c": "Preprocessor",
+            "d": "Function/Method"
+        },
+        "2": {
+            "a": "Volatile variable",
+            "b": "Mutable variable",
+            "c": "Immutable variable",
+            "d": "Dynamic variable"
+        },
+        "3": {
+            "a": "00",
+            "b": "0x",
+            "c": "0X",
+            "d": "Both 0x and 0X"
+        },
+        "4": {
+            "a": "[digits][.digits][(E|e)[(+|-)]digits]",
+            "b": "[digits][+digits][(E|e)[(+|-)]digits]",
+            "c": "[digits][(E|e)[(+|-)]digits]",
+            "d": "[.digits][digits][(E|e)[(+|-)]digits]"
+        },
+        "5": {
+            "a": "Prints an exception error",
+            "b": "Prints an overflow error",
+            "c": "Displays “Infinity”",
+            "d": "Prints the value as such"
+        },
+        "6": {
+            "a": "Syntax error",
+            "b": "Missing of semicolons",
+            "c": "Division by zero”",
+            "d": "Missing of Bracket"
+        },
+        "7": {
+            "a": "Floating numbers",
+            "b": "Representation of functions that returns a value",
+            "c": "\f is not present in JavaScript",
+            "d": "Form feed"
+        },
+        "8": {
+            "a": "if(a!=null)",
+            "b": "if (!a)",
+            "c": "if(a!null)",
+            "d": "if(a!==null)"
+        },
+        "9": {
+            "a": "Both a and b are equal in value, type and reference address",
+            "b": "Both a and b are equal in value",
+            "c": "Both a and b are equal in value and type",
+            "d": "There is no such statement"
+        },
+        "10": {
+            "a": "Function prototype",
+            "b": "Function literal",
+            "c": "Function calling",
+            "d": "Function declaration"
+        }
+    },
+    {
+        "1": "Function/Method",
+        "2": "Mutable variable",
+        "3": "Both 0x and 0X",
+        "4": "[digits][.digits][(E|e)[(+|-)]digits]",
+        "5": "Displays “Infinity”",
+        "6": "Division by zero”",
+        "7": "Form feed",
+        "8": "if(a!==null)",
+        "9": "Both a and b are equal in value and type",
+        "10": "Function literal"
+    }
+]

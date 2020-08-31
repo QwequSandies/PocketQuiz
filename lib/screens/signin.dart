@@ -33,7 +33,11 @@ class _SignInState extends State<SignIn> {
                 validator: (val) {
                   return val.isEmpty ? "Enter email ID" : null;
                 },
-                decoration: InputDecoration(hintText: "Email"),
+                decoration: InputDecoration(
+                    hintText: "Email",
+                    hintStyle: TextStyle(
+                      fontFamily: "Lobster",
+                    )),
                 onChanged: (val) {
                   email = val;
                 },
@@ -47,8 +51,10 @@ class _SignInState extends State<SignIn> {
                   return val.isEmpty ? "Enter Password" : null;
                 },
                 decoration: InputDecoration(
-                  hintText: "Password",
-                ),
+                    hintText: "Password",
+                    hintStyle: TextStyle(
+                      fontFamily: "Lobster",
+                    )),
                 onChanged: (val) {
                   password = val;
                 },
@@ -57,12 +63,11 @@ class _SignInState extends State<SignIn> {
                 height: 24,
               ),
               GestureDetector(
-                onTap: () {
-                  Navigator.pushReplacement(context,
-                      MaterialPageRoute(builder: (context) => CreateQuiz()));
-                },
-                child: blueButton(context, "Sign In")
-              ),
+                  onTap: () {
+                    Navigator.pushReplacement(context,
+                        MaterialPageRoute(builder: (context) => CreateQuiz()));
+                  },
+                  child: blueButton(context, "Sign In")),
               SizedBox(
                 height: 18,
               ),
