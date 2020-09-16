@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:quizzy/screens/quiz/createquiz.dart';
+import 'package:quizzy/widgets/widgets.dart';
 
 class Option extends StatefulWidget {
   @override
@@ -6,61 +8,57 @@ class Option extends StatefulWidget {
 }
 
 class _OptionState extends State<Option> {
-  PageController controller = PageController();
-  var currentPageValue = 0.0;
+  final controller = PageController(
+    initialPage: 0,
+  );
+  var scrollDirection = Axis.horizontal;
 
   @override
   Widget build(BuildContext context) {
-    return PageView(children: <Widget>[
-      PageView.builder(
+    return Scaffold(
+      appBar: appBar(context),
+      body: PageView(
         controller: controller,
-        itemBuilder: (context, position) {
-          if (position == currentPageValue.floor()) {
-            return Transform(
-              transform: Matrix4.identity()
-                ..rotateX(currentPageValue - position),
-              child: Container(
-                color: position % 2 == 0 ? Colors.blue : Colors.pink,
+        scrollDirection: scrollDirection,
+        pageSnapping: true,
+        children: [
+          Container(
+              color: Colors.white,
+              child: Card(
+                color: Colors.indigoAccent,
+                elevation: 4,
+                margin: EdgeInsets.all(24),
                 child: Center(
-                  child: Text(
-                    "Page",
-                    style: TextStyle(color: Colors.white, fontSize: 22.0),
-                  ),
+                  child: GestureDetector(
+                      onTap: () {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => CreateQuiz()));
+                      },
+                      child: blueButton(context, "Create your quiz")),
                 ),
-              ),
-            );
-          } else if (position == currentPageValue.floor() + 1) {
-            return Transform(
-              transform: Matrix4.identity()
-                ..rotateX(currentPageValue - position),
-              child: Container(
-                color: position % 2 == 0 ? Colors.blue : Colors.pink,
-                child: Center(
-                  child: Container(
-                    height: 200,
-                    width: 150,
-                    color: Colors.green,
-                    child: Text(
-                      " "
-                    ),
-                  )
-                ),
-              ),
-            );
-          } else {
-            return Container(
-              color: position % 2 == 0 ? Colors.blue : Colors.pink,
+              )),
+          Container(
+            color: Colors.white,
+            child: Card(
+              color: Colors.purpleAccent,
+              elevation: 4,
+              margin: EdgeInsets.all(24),
               child: Center(
-                child: Text(
-                  "Page",
-                  style: TextStyle(color: Colors.white, fontSize: 22.0),
-                ),
+                child: GestureDetector(
+                    onTap: () {
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => CreateQuiz()));
+                    },
+                    child: blueButton(context, "Create your quiz")),
               ),
-            );
-          }
-        },
-        itemCount: 2,
-      )
-    ]);
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
