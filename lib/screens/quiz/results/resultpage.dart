@@ -91,6 +91,7 @@ class _ResultState extends State<Result> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                // ignore: deprecated_member_use
                 OutlineButton(
                   onPressed: () {
                     Navigator.of(context).pushReplacement(MaterialPageRoute(

@@ -151,7 +151,7 @@ class _QuizpageState extends State<Quizpage> {
             ),
             content: Text("You Can't Go Back At This Stage "),
             actions: <Widget>[
-              FlatButton(
+              TextButton(
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
